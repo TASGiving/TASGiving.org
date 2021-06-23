@@ -1,0 +1,104 @@
+body {
+  font: 16px "PT Sans", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  color: #ddd;
+  background: #303030;
+  background-image: url('../assets/bg.png');
+  background-repeat: repeat;
+}
+
+/*
+ * Information boxes
+ */
+#about {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  section {
+    flex-basis: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    text-align: justify;
+    flex-grow: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 0.5em;
+  }
+
+  p a {
+    color: #3e50f4;
+    text-decoration: none;
+  }
+
+  p a:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+#sponsors {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 2em;
+
+  a {
+    flex-basis: 25%;
+    margin-right: 5%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+#donateButton {
+  position: relative;
+  background: #fff;
+  border-radius: 1em;
+  color: green;
+  border: 0.5rem solid green;
+  padding: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0px 0.5rem 0px 0px rgba(0, 75, 0, 1);
+  top: 0;
+  transition: top 0.2s, box-shadow 0.2s;
+}
+#donateButton:hover {
+  text-decoration: none;
+  background: #fff;
+  /* box-shadow: none; */
+  box-shadow: 0px 1rem 0px 0px rgba(0, 75, 0, 1);
+  top: -0.5rem;
+}
+#donateButton:active {
+  text-decoration: none;
+  background: #fff;
+  box-shadow: none;
+  top: 0.5rem;
+}
+
+/*
+ * Responsive queries
+ */
+
+@media only screen and (min-width: 800px) {
+  #about section {
+    flex-basis: 50%;
+  }
+}
