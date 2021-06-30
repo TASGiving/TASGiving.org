@@ -3,7 +3,7 @@ const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
-  publicPath: undefined,
+  publicPath: "/TASGiving.org/",
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
