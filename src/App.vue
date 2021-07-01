@@ -66,10 +66,10 @@ export default {
   },
   methods: {
     checkTimer() {
-      if (timerTarget.getTime() < new Date().getTime()) {
-        this.phase = "live";
-        clearInterval(this.timeUpdateInterval);
-      }
+      // if (timerTarget.getTime() < new Date().getTime()) {
+      //   this.phase = "live";
+      //   clearInterval(this.timeUpdateInterval);
+      // }
     },
     toggleTheme() {
       this.darkMode = !this.darkMode;

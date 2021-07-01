@@ -24,6 +24,7 @@
                   NAMI
                 </b-nav-item>
                 <b-nav-item
+                  v-if="phase === 'live'"
                   href="https://horaro.org/tasgiving2020/schedule"
                   target="_blank"
                   rel="noopener"
@@ -59,15 +60,21 @@
       <b-row>
         <b-col>
           <h1>TASGiving</h1>
-          <span
-            >TASBot's charity marathon is here! It's 3 days of speedruns,
-            TAS'es, randomizer races, and maybe even a few surprises. All
-            donations, subscription, and bit proceeds will benefit NAMI.</span
-          ><br />
-          <span
-            >November 27-29th. Live on
-            <a href="https://twitch.tv/dwangoac">twitch.tv/dwangoac</a></span
-          >
+          <span>
+            TASBot's charity marathon in 2020 showcased 3 days of speedruns,
+            TAS'es, randomizer races, and more!
+            <br />
+            All donations, subscriptions, and bit proceeds benefited NAMI.
+          </span>
+          <br />
+          <!-- <span>
+            November 27-29th. Live on
+            <a href="https://twitch.tv/dwangoac">twitch.tv/dwangoac</a>
+          </span> -->
+          <span>
+            We are still determining when TASGiving 2021 will be. Please check
+            back later!
+          </span>
         </b-col>
       </b-row>
       <b-row v-if="phase === 'live'">
@@ -78,8 +85,9 @@
             block
             href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020"
             class="wide"
-            >Donate now!</b-button
           >
+            Donate now!
+          </b-button>
         </b-col>
       </b-row>
     </b-container>
