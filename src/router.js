@@ -2,7 +2,7 @@ import VueRouter from "vue-router";
 import Home from "./views/TasgivingHome";
 
 export default new VueRouter({
-  mode: "history",
+  mode: "hash",
   base: "/",
   routes: [
     {
