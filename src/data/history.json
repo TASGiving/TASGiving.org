@@ -1,0 +1,23 @@
+{
+  "data": {
+    "timezone": "America/Los_Angeles",
+    "website": "https://tasgiving.org/",
+    "description": null
+  },
+  "events": [
+    {
+      "title": "TASGiving 2020",
+      "description": "Our First Year!",
+      "raised": "$10,085.00",
+      "runCount": 44,
+      "runnerCount": 29,
+      "runtime": {
+        "date": "01/13/2021",
+        "days": 2,
+        "hours": 9,
+        "minutes": 25,
+        "seconds": 13
+      }
+    }
+  ]
+}

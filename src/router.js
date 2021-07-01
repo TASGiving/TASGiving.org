@@ -9,6 +9,11 @@ export default new VueRouter({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/history",
+      name: "history",
+      component: () => import(/* webpackChunkName: "about" */ "./views/History")
     }
   ]
 });

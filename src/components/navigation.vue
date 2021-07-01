@@ -8,6 +8,9 @@
         <b-nav-item to="/">
           Home
         </b-nav-item>
+        <b-nav-item to="/history/">
+          History
+        </b-nav-item>
         <b-nav-item href="https://www.nami.org/" target="_blank" rel="noopener">
           NAMI
         </b-nav-item>
