@@ -10,6 +10,18 @@ module.exports = {
   productionSourceMap: false,
   parallel: undefined,
   css: undefined,
+  pages: {
+    index: {
+      entry: "./src/main.js",
+      template: "public/index.html",
+      filename: "index.html"
+    },
+    missing: {
+      entry: "./src/main.js",
+      template: "public/404.html",
+      filename: "404.html"
+    }
+  },
   pluginOptions: {
     externals: {
       common: [
@@ -49,5 +61,5 @@ module.exports = {
       })
       // new BundleAnalyzerPlugin()
     ]
-  }
+  },
 };
