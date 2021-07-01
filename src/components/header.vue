@@ -76,7 +76,8 @@
             pill
             variant="danger"
             block
-            href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020  "
+            href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020"
+            class="wide"
             >Donate now!</b-button
           >
         </b-col>
@@ -122,6 +123,9 @@ header {
   }
   a {
     font-weight: 700;
+  }
+  .wide {
+    width: 100%;
   }
 }
 .logo-container {
