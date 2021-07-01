@@ -3,49 +3,7 @@
     <b-container>
       <b-row>
         <b-col lg="12">
-          <b-navbar toggleable="md" type="dark" class="whole-nav">
-            <b-navbar-toggle target="nav-text-collapse">
-              <b-navbar-toggle target="nav-text-collapse" disabled /> Links
-            </b-navbar-toggle>
-            <b-collapse id="nav-text-collapse" is-nav>
-              <b-navbar-nav class="top-navbar-nav">
-                <b-nav-item
-                  href="https://tasgiving.org"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Home
-                </b-nav-item>
-                <b-nav-item
-                  href="https://www.nami.org/"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  NAMI
-                </b-nav-item>
-                <b-nav-item
-                  v-if="phase === 'live'"
-                  href="https://horaro.org/tasgiving2020/schedule"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Schedule
-                </b-nav-item>
-                <b-nav-item
-                  v-if="phase === 'live'"
-                  href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020"
-                >
-                  Donate
-                </b-nav-item>
-                <b-nav-item
-                  v-if="phase === 'live'"
-                  href="https://tracker.tasbot.net/tracker/event/TASGiving2020"
-                >
-                  Donation tracker
-                </b-nav-item>
-              </b-navbar-nav>
-            </b-collapse>
-          </b-navbar>
+          <Navigation :phase="phase" />
         </b-col>
       </b-row>
       <b-row>
@@ -95,8 +53,11 @@
 </template>
 
 <script>
+import Navigation from "./navigation.vue";
+
 export default {
   name: "Header",
+  components: { Navigation },
   props: {
     phase: {
       type: String,
@@ -143,30 +104,5 @@ header {
 }
 .tasgiving-logo {
   height: 200px;
-}
-nav.navbar.whole-nav {
-  text-transform: uppercase;
-  @media (max-width: 992px) {
-    justify-content: center;
-    text-align: center;
-  }
-  ul.navbar-nav.top-navbar-nav {
-    margin-left: auto;
-    margin-right: auto;
-
-    li.nav-item {
-      margin-right: 10px;
-      white-space: nowrap;
-    }
-    a.nav-link {
-      font-weight: 600;
-      letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.7);
-    }
-    a.nav-link:hover {
-      color: #fff;
-      text-decoration: underline;
-    }
-  }
 }
 </style>
