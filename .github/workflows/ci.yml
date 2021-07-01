@@ -14,4 +14,4 @@ jobs:
         username: 'TASGiving'
         reponame: 'TASGiving.org'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-        cname: 'https://tasgiving.org/'
+        cname: 'tasgiving.org'
