@@ -10,7 +10,7 @@
         <b-col lg="12" class="logo-container">
           <img
             class="tasgiving-logo"
-            src="../assets/logo-cutout.png"
+            src="../assets/avatar.png"
             alt="Logo of TASGiving"
           />
         </b-col>
@@ -65,10 +65,14 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background-color: #ff742a;
-  background: linear-gradient(#ff8746, #ff742a);
+  background-color: #666666;
+  background-image: url("../assets/bkg1.png");
+  background-position-y: 60%;
+  background-size: 100%;
   color: #eee;
   padding-bottom: 1em;
+  // border: 14px solid rgba(255, 116, 42, 0.5);
+
   h1,
   h3 {
     text-align: center;

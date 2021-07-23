@@ -18,6 +18,7 @@
 import Header from "./components/header";
 
 const timerTarget = new Date("26 Nov 2021 12:00:00 PST");
+
 const eaList = [
   "ArrowUp",
   "ArrowUp",
@@ -117,10 +118,11 @@ body::after {
 }
 .light-mode-toggle {
   position: absolute;
-  left: 1em;
-  top: 1em;
+  left: 2em;
+  top: 2em;
   z-index: 100;
   color: #fff;
+  background-color: #ff742a;
   @media (max-width: 576px) {
     display: none;
   }
