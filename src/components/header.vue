@@ -69,13 +69,18 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background-color: #666666;
-  background-image: url("../assets/bkg1.png");
+  background: linear-gradient(
+      rgba(256, 172, 158, 0.7) 0% 10%,
+      rgba(256, 172, 158, 0.9) 10% 12.5%,
+      rgba(0, 0, 0, 0) 12.5% 87.5%,
+      rgba(256, 172, 158, 0.9) 87.5% 90%,
+      rgba(256, 172, 158, 0.7) 90%
+    ),
+    url("../assets/banner2.png");
   background-position-y: 60%;
   background-size: 100%;
   color: #eee;
   padding-bottom: 1em;
-  // border: 14px solid rgba(255, 116, 42, 0.5);
 
   h1,
   h3 {
