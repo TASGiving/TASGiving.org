@@ -17,7 +17,7 @@
 <script>
 import Header from "./components/header";
 
-const timerTarget = new Date("27 Nov 2020 12:00:00 PST");
+const timerTarget = new Date("26 Nov 2021 12:00:00 PST");
 const eaList = [
   "ArrowUp",
   "ArrowUp",
@@ -66,10 +66,10 @@ export default {
   },
   methods: {
     checkTimer() {
-      // if (timerTarget.getTime() < new Date().getTime()) {
-      //   this.phase = "live";
-      //   clearInterval(this.timeUpdateInterval);
-      // }
+      if (timerTarget.getTime() < new Date().getTime()) {
+        this.phase = "live";
+        clearInterval(this.timeUpdateInterval);
+      }
     },
     toggleTheme() {
       this.darkMode = !this.darkMode;

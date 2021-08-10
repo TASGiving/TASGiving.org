@@ -15,6 +15,13 @@
           NAMI
         </b-nav-item>
         <b-nav-item
+          href="https://s.tasgiving.org/"
+          target="_blank"
+          rel="noopener"
+        >
+          Submit a run
+        </b-nav-item>
+        <b-nav-item
           v-if="phase === 'live'"
           href="https://horaro.org/tasgiving2020/schedule"
           target="_blank"
