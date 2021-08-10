@@ -1,15 +1,22 @@
 <template>
   <div>
     <div v-for="(item, offset) in historyItems" :key="offset" class="event">
-      <div class="title">{{item.title}}</div>
-      <div class="date">{{item.runtime.date}}</div>
-      <div class="description">{{item.description}}</div>
-      <div class="detail"><span class="title">Raised</span>{{item.raised}}</div>
-      <div class="detail"><span class="title">Runs</span>{{item.runCount}}</div>
-      <div class="detail"><span class="title">Runners</span>{{item.runnerCount}}</div>
+      <div class="title">{{ item.title }}</div>
+      <div class="date">{{ item.runtime.date }}</div>
+      <div class="description">{{ item.description }}</div>
+      <div class="detail">
+        <span class="title">Raised</span>{{ item.raised }}
+      </div>
+      <div class="detail">
+        <span class="title">Runs</span>{{ item.runCount }}
+      </div>
+      <div class="detail">
+        <span class="title">Runners</span>{{ item.runnerCount }}
+      </div>
       <div class="detail">
         <span class="title">Length</span>
-        {{item.runtime.days}} days {{item.runtime.hours}} hours {{item.runtime.minutes}} minutes {{item.runtime.seconds}} seconds
+        {{ item.runtime.days }} days {{ item.runtime.hours }} hours
+        {{ item.runtime.minutes }} minutes {{ item.runtime.seconds }} seconds
       </div>
     </div>
   </div>
@@ -39,7 +46,7 @@ export default {
     display: inline-block;
   }
 
-  >.title {
+  > .title {
     font-size: 1.5em;
     font-weight: bold;
     width: calc(100% - 170px);
@@ -62,7 +69,7 @@ export default {
       padding-right: 10px;
 
       &:after {
-        content: ":"
+        content: ":";
       }
     }
   }

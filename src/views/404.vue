@@ -5,8 +5,8 @@
         <b-col md="3">
           <img
             class="tasgiving-logo"
-            src="../assets/logo-cutout.png"
-            alt="Logo of TASGiving"
+            src="../assets/404.png"
+            alt="Logo of TASGiving: 404 Error"
           />
           <h2 class="errorText">We can't find that?</h2>
         </b-col>
