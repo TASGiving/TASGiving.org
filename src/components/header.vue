@@ -19,19 +19,15 @@
         <b-col>
           <h1>TASGiving</h1>
           <span>
-            TASBot's charity marathon in 2020 showcased 3 days of speedruns,
-            TAS'es, randomizer races, and more!
+            TASGiving is a 48 hour charity marathon starting on November 26th at
+            12:00pm PT, and running until November 28th at 12:00pm PT.
             <br />
-            All donations, subscriptions, and bit proceeds benefited NAMI.
+            All donations, subscriptions, and bit proceeds benefit NAMI.
           </span>
           <br />
-          <!-- <span>
-            November 27-29th. Live on
-            <a href="https://twitch.tv/dwangoac">twitch.tv/dwangoac</a>
-          </span> -->
           <span>
-            We are still determining when TASGiving 2021 will be. Please check
-            back later!
+            November 26-28th. Live on
+            <a href="https://twitch.tv/dwangoac">twitch.tv/dwangoac</a>
           </span>
         </b-col>
       </b-row>

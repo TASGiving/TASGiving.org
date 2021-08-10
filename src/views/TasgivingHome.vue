@@ -16,7 +16,7 @@
         <b-col md="6">
           <b-card class="benefiting-card" text-variant="white">
             <b-card-title class="text-center">
-              TASGiving 2020 Benefited
+              TASGiving 2021 Benefits
               <a href="https://www.nami.org/" target="_blank" rel="noopener"
                 >NAMI</a
               >
