@@ -56,7 +56,7 @@ main {
   margin-bottom: 4em;
 }
 .card.history-card {
-  background-color: #ff742a;
+  background-color: rgb(255, 172, 158);
   border-radius: 1.5rem;
 }
 img.childsplay-controller {
@@ -104,7 +104,7 @@ img.childsplay-controller {
   bottom: -62px;
   text-align: center;
   width: 100%;
-  color: #ff742a;
+  color: rgb(255, 172, 158);
 }
 a:link {
   color: #ddd;

@@ -122,7 +122,7 @@ body::after {
   top: 2em;
   z-index: 100;
   color: #fff;
-  background-color: #ff742a;
+  background-color: rgb(255, 172, 158);
   @media (max-width: 576px) {
     display: none;
   }
