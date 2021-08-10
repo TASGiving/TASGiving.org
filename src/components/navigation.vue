@@ -15,7 +15,7 @@
           NAMI
         </b-nav-item>
         <b-nav-item
-          href="https://s.tasgiving.org/"
+          href="http://s.tasgiving.org/"
           target="_blank"
           rel="noopener"
         >
