@@ -65,18 +65,35 @@ export default {
 
 <style scoped lang="scss">
 header {
+  background: rgb(138, 138, 138);
   background: linear-gradient(
-      rgba(256, 172, 158, 0.7) 0% 10%,
-      rgba(256, 172, 158, 0.9) 10% 12.5%,
-      rgba(0, 0, 0, 0) 12.5% 87.5%,
-      rgba(256, 172, 158, 0.9) 87.5% 90%,
-      rgba(256, 172, 158, 0.7) 90%
+      rgba(255, 172, 158, 0.7) 48px,
+      rgba(255, 172, 158, 0.9) 48px 60px,
+      rgba(0, 0, 0, 0) 60px calc(100% - 60px),
+      rgba(255, 172, 158, 0.9) calc(100% - 60px) calc(100% - 48px),
+      rgba(255, 172, 158, 0.7) calc(100% - 48px)
     ),
-    url("../assets/banner2.png");
+    url("../assets/banner2_dark.png");
   background-position-y: 60%;
+  background-repeat: no-repeat;
   background-size: 100%;
   color: #eee;
   padding-bottom: 1em;
+
+  @media (max-width: 992px) {
+    background: linear-gradient(
+        rgba(255, 172, 158, 0.7) 67px,
+        rgba(255, 172, 158, 0.9) 67px 79px,
+        rgba(0, 0, 0, 0) 82px calc(100% - 69px),
+        rgba(255, 172, 158, 0.9) calc(100% - 69px) calc(100% - 57px),
+        rgba(255, 172, 158, 0.7) calc(100% - 57px)
+      ),
+      url("../assets/banner2_dark.png");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-bottom: 0.75em;
+  }
 
   h1,
   h3 {

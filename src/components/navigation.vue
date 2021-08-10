@@ -68,6 +68,9 @@ nav.navbar.whole-nav {
   ul.navbar-nav.top-navbar-nav {
     margin-left: auto;
     margin-right: auto;
+    @media (max-width: 992px) {
+      background-color: rgb(255, 172, 158);
+    }
 
     li.nav-item {
       margin-right: 10px;
