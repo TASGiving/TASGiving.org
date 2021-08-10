@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-button
+    <!-- <b-button
       pill
       variant="outline-secondary"
       class="light-mode-toggle"
@@ -8,7 +8,7 @@
     >
       <span v-if="darkMode">Light mode</span>
       <span v-else>Dark mode</span>
-    </b-button>
+    </b-button> -->
     <app-header :phase="phase" />
     <router-view :phase="phase" class="main-view" />
   </div>
