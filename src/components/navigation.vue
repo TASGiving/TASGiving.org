@@ -22,6 +22,13 @@
           Submit a run
         </b-nav-item>
         <b-nav-item
+          href="http://discord.tasgiving.org/"
+          target="_blank"
+          rel="noopener"
+        >
+          Join Our Discord!
+        </b-nav-item>
+        <b-nav-item
           v-if="phase === 'live'"
           href="https://horaro.org/tasgiving2020/schedule"
           target="_blank"
