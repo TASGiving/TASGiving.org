@@ -10,7 +10,7 @@
     <a href="https://twitter.com/MrTASBot" target="_blank" rel="noopener">
       <i class="fab fa-twitter" /> Twitter
     </a>
-    <a href="http://discord.tasbot.net" target="_blank" rel="noopener">
+    <a href="http://discord.tasgiving.org/" target="_blank" rel="noopener">
       <i class="fab fa-discord" /> Discord
     </a>
   </div>
