@@ -1,6 +1,6 @@
 <template>
   <main>
-    <b-container v-if="phase === 'hype'" fluid class="countdown">
+    <b-container v-if="phase === 'hype'" fluid class="countdown px-0">
       <Countdown />
     </b-container>
     <b-container v-if="phase === 'live'" class="video">
@@ -83,8 +83,8 @@ main {
 
 .countdown {
   margin: 0;
-  background: #333;
-  color: #ddd;
+  background: #161616;
+  color: #dddddd;
 }
 .boxes {
   margin-top: 3em;
