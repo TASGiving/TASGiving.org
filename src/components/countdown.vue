@@ -101,7 +101,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+@font-face {
+  font-family: 'Nixie One';
+  src: url("//raw.githubusercontent.com/TASGiving/TASGiving.org/main/public/Nixie_One_Regular_Mod.ttf");
+}
 
 #clock {
   position: relative;
@@ -142,7 +145,7 @@ export default {
       vertical-align: bottom;
       color: rgba(64, 48, 19, 1);
       text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
-      content: "8";
+      content: "‡";
     }
 
     .digit {
