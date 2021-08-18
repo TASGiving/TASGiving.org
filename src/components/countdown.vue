@@ -143,8 +143,8 @@ export default {
       margin: 0 10px;
       text-align: center;
       vertical-align: bottom;
-      color: rgba(64, 48, 19, 1);
-      text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+      color: rgba(64,48,19,0.75);
+      text-shadow: 0px 0px 5px rgba(0,0,0,1);
       content: "‡";
     }
 
