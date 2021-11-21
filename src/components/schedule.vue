@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import rawSchedule from "../data/schedule.json";
 export default {
   name: "Schedule",
   components: {},
@@ -29,7 +28,11 @@ export default {
     };
   },
   created() {
-    this.parseSchedule();
+    fetch(`${window.location.origin}/schedule.json`)
+      .then(response => response.json())
+      .then(data => {
+        this.parseSchedule(data);
+      });
   },
   methods: {
     formatDate(date) {
@@ -49,7 +52,7 @@ export default {
       const options = { weekday: "long", month: "long", day: "numeric" };
       return date.toLocaleDateString("en-US", options);
     },
-    parseSchedule() {
+    parseSchedule(rawSchedule) {
       this.startDate = new Date(Date.parse(rawSchedule.data.start));
       let curDay = this.startDate.getDay();
       let dayIdx = 0;

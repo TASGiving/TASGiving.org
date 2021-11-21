@@ -30,7 +30,7 @@
             </a>
           </b-card>
         </b-col>
-        <!-- <b-col md="6">
+        <b-col md="6">
           <b-card class="schedule-card" text-variant="white">
             <b-card-title class="text-center">
               Schedule
@@ -42,20 +42,20 @@
             </small>
             <Schedule />
           </b-card>
-        </b-col> -->
+        </b-col>
       </b-row>
     </b-container>
   </main>
 </template>
 
 <script>
-// import Schedule from "../components/schedule";
+import Schedule from "../components/schedule";
 import Countdown from "../components/countdown";
 export default {
   name: "Home",
   components: {
-    Countdown
-    // Schedule
+    Countdown,
+    Schedule
   },
   props: {
     phase: {
