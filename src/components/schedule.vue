@@ -28,7 +28,7 @@ export default {
       scheduleData: []
     };
   },
-  async created() {
+  created() {
     this.parseSchedule();
   },
   methods: {
