@@ -15,11 +15,11 @@
           NAMI
         </b-nav-item>
         <b-nav-item
-          href="http://s.tasgiving.org/"
+          href="https://tracker.tasbot.net/tracker/runs/TASGiving2021"
           target="_blank"
           rel="noopener"
         >
-          Submit a run
+          Schedule
         </b-nav-item>
         <b-nav-item
           href="http://discord.tasgiving.org/"
@@ -30,21 +30,13 @@
         </b-nav-item>
         <b-nav-item
           v-if="phase === 'live'"
-          href="https://horaro.org/tasgiving2020/schedule"
-          target="_blank"
-          rel="noopener"
-        >
-          Schedule
-        </b-nav-item>
-        <b-nav-item
-          v-if="phase === 'live'"
-          href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020"
+          href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2021"
         >
           Donate
         </b-nav-item>
         <b-nav-item
           v-if="phase === 'live'"
-          href="https://tracker.tasbot.net/tracker/event/TASGiving2020"
+          href="https://tracker.tasbot.net/tracker/event/TASGiving2021"
         >
           Donation tracker
         </b-nav-item>

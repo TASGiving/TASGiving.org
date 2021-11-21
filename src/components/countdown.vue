@@ -69,11 +69,11 @@ export default {
       showTimer: true,
       eventDate: undefined,
       interval: undefined,
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
-      milliseconds: 0
+      days: "000",
+      hours: "00",
+      minutes: "00",
+      seconds: "00",
+      milliseconds: "000"
     };
   },
   created() {
@@ -102,7 +102,7 @@ export default {
 
 <style scoped lang="scss">
 @font-face {
-  font-family: 'Nixie One';
+  font-family: "Nixie One";
   src: url("//raw.githubusercontent.com/TASGiving/TASGiving.org/main/public/Nixie_One_Regular_Mod.ttf");
 }
 
@@ -143,8 +143,8 @@ export default {
       margin: 0 10px;
       text-align: center;
       vertical-align: bottom;
-      color: rgba(64,48,19,0.75);
-      text-shadow: 0px 0px 5px rgba(0,0,0,1);
+      color: rgba(64, 48, 19, 0.75);
+      text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
       content: "‡";
     }
 

@@ -28,7 +28,7 @@ export default {
       scheduleData: []
     };
   },
-  created() {
+  async created() {
     this.parseSchedule();
   },
   methods: {
@@ -63,7 +63,7 @@ export default {
         }
         this.scheduleData[dayIdx].push({
           start: this.formatDate(new Date(Date.parse(item.scheduled))),
-          description: item.data[0]
+          description: item.data[1]
         });
       }
     }
