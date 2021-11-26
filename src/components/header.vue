@@ -1,6 +1,6 @@
 <template>
   <header>
-    <b-container>
+    <b-container class="header-container">
       <b-row>
         <b-col lg="12">
           <Navigation :phase="phase" />
@@ -38,7 +38,7 @@
             variant="danger"
             block
             href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2021"
-            class="wide"
+            class="wide donate-button"
           >
             Donate now!
           </b-button>
@@ -64,6 +64,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.header-container {
+  margin-bottom: -12px;
+}
 header {
   background: rgb(138, 138, 138);
   background: linear-gradient(
@@ -126,5 +129,8 @@ header {
 }
 .tasgiving-logo {
   height: 200px;
+}
+.donate-button {
+  margin-top: 20px;
 }
 </style>
